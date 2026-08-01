@@ -23,7 +23,7 @@
   <div class="container">
     <div class="logo">HYPERTROPHY AI</div>
     <h1>Politica de Privacidad</h1>
-    <p class="updated">Ultima actualizacion: Marzo 2026</p>
+    <p class="updated">Ultima actualizacion: Julio 2026</p>
 
     <h2>1. Informacion que Recopilamos</h2>
     <p>Al usar Hypertrophy AI, recopilamos la siguiente informacion:</p>
@@ -33,6 +33,7 @@
       <li>Datos de nutricion: comidas registradas, fotos de alimentos y planes de dieta.</li>
       <li>Datos de perfil: foto de perfil, biografia, objetivos de entrenamiento y preferencias.</li>
       <li>Datos de recuperacion: cuestionarios de preparacion diaria y estado de fatiga muscular.</li>
+      <li>Datos de salud: si concedes permiso, frecuencia cardiaca, frecuencia cardiaca en reposo, calorias activas, pasos y analisis de sueno procedentes de Apple Salud y del Apple Watch. La seccion 4 detalla que se guarda y que no sale de tu dispositivo.</li>
       <li>Datos tecnicos: tipo de dispositivo, sistema operativo y tokens de notificaciones push.</li>
     </ul>
 
@@ -48,9 +49,29 @@
     <p>No utilizamos tus datos para publicidad ni los vendemos a terceros.</p>
 
     <h2>3. Coach de Inteligencia Artificial</h2>
-    <p>Hypertrophy AI utiliza modelos de inteligencia artificial para el Coach personalizado. Tus datos de entrenamiento y nutricion pueden ser procesados por proveedores de IA (como Anthropic) para generar recomendaciones. Estos proveedores no retienen tus datos personales despues del procesamiento.</p>
+    <p>Hypertrophy AI utiliza modelos de inteligencia artificial para el Coach personalizado. Los proveedores que procesan tus consultas son OpenAI (modelos GPT) y Anthropic (modelos Claude), seleccionados segun el tipo de consulta. Tus datos de entrenamiento y nutricion pueden ser enviados a estos proveedores para generar recomendaciones personalizadas.</p>
+    <p>Estos proveedores procesan los datos bajo sus politicas zero-retention para acceso via API: no retienen tus datos personales despues del procesamiento ni los utilizan para entrenar sus modelos. Puedes consultar sus politicas en <a href="https://openai.com/policies">openai.com/policies</a> y <a href="https://www.anthropic.com/legal">anthropic.com/legal</a>.</p>
+    <p>Tus datos de salud no se envian a estos proveedores: las consultas del Coach no incluyen frecuencia cardiaca, calorias activas, pasos ni sueno.</p>
+    <p>Las recomendaciones generadas por IA son de caracter informativo y no sustituyen el consejo de un profesional de la salud.</p>
 
-    <h2>4. Almacenamiento y Seguridad</h2>
+    <h2>4. Datos de Salud (Apple Salud y Apple Watch)</h2>
+    <p>Si concedes permiso, Hypertrophy AI lee de Apple Salud tu frecuencia cardiaca, frecuencia cardiaca en reposo, calorias activas, pasos y analisis de sueno. La app del Apple Watch mide tu frecuencia cardiaca y tus calorias activas mientras entrenas, y guarda el entrenamiento en Apple Salud para que cuente en tus anillos de actividad.</p>
+    <p>No todos esos datos salen de tu dispositivo:</p>
+    <ul>
+      <li>Se guardan en nuestros servidores, junto a la sesion correspondiente: frecuencia cardiaca media, frecuencia cardiaca maxima y calorias activas.</li>
+      <li>No salen nunca de tu dispositivo: pasos y analisis de sueno. Solo se leen para mostrarlos en la pantalla de Salud de la app.</li>
+    </ul>
+    <p>Sobre los datos de salud nos comprometemos a que:</p>
+    <ul>
+      <li>No se usan para publicidad ni para marketing.</li>
+      <li>No se venden ni se comparten con terceros.</li>
+      <li>No se utilizan para mineria de datos ni para ningun fin distinto de mostrarte tu esfuerzo y tu recuperacion.</li>
+      <li>No se envian a los proveedores de inteligencia artificial.</li>
+    </ul>
+    <p>Puedes revocar el acceso cuando quieras desde Ajustes de iOS &gt; Salud &gt; Acceso y dispositivos &gt; Hypertrophy AI. Revocarlo detiene la lectura de nuevos datos, pero no borra los que ya se guardaron: para eso elimina tu cuenta desde Perfil &gt; Eliminar Cuenta.</p>
+    <p>La medicion de frecuencia cardiaca es orientativa. Hypertrophy AI no es un dispositivo medico y no debe usarse para diagnosticar, tratar ni prevenir ninguna enfermedad.</p>
+
+    <h2>5. Almacenamiento y Seguridad</h2>
     <p>Tus datos se almacenan de forma segura en Supabase con cifrado en reposo y en transito. Implementamos medidas de seguridad incluyendo:</p>
     <ul>
       <li>Autenticacion con verificacion de correo electronico.</li>
@@ -59,35 +80,36 @@
       <li>Cifrado HTTPS en todas las comunicaciones.</li>
     </ul>
 
-    <h2>5. Compartir Datos</h2>
+    <h2>6. Compartir Datos</h2>
     <p>No vendemos ni compartimos tu informacion personal con terceros para fines publicitarios.</p>
     <p>Compartimos datos unicamente con:</p>
     <ul>
       <li>Supabase: almacenamiento seguro de datos.</li>
-      <li>Proveedores de IA: procesamiento de consultas del Coach (sin retencion).</li>
+      <li>Proveedores de IA: procesamiento de consultas del Coach (sin retencion y sin datos de salud).</li>
       <li>Otros usuarios: solo la informacion de tu perfil publico (nombre, foto, logros) si decides participar en la comunidad.</li>
     </ul>
+    <p>Tus datos de salud no se comparten con ninguno de ellos salvo Supabase, que los almacena, y nunca se publican en la comunidad.</p>
 
-    <h2>6. Tus Derechos</h2>
+    <h2>7. Tus Derechos</h2>
     <p>Tienes derecho a:</p>
     <ul>
       <li>Acceder a todos tus datos desde la aplicacion.</li>
       <li>Modificar tu informacion de perfil en cualquier momento.</li>
-      <li>Eliminar tu cuenta y todos tus datos de forma permanente desde Perfil > Eliminar Cuenta.</li>
-      <li>Exportar tus datos de entrenamiento.</li>
+      <li>Eliminar tu cuenta y todos tus datos de forma permanente desde Perfil &gt; Eliminar Cuenta.</li>
+      <li>Solicitar una exportacion de tus datos enviando un correo a <a href="mailto:hypertrophyai.support@gmail.com">hypertrophyai.support@gmail.com</a> (respondemos dentro de 30 dias).</li>
     </ul>
     <p>La eliminacion de cuenta es inmediata e irreversible.</p>
 
-    <h2>7. Retencion de Datos</h2>
-    <p>Conservamos tus datos mientras tu cuenta este activa. Al eliminar tu cuenta, todos tus datos se borran permanentemente de nuestros servidores, incluyendo entrenamientos, nutricion, perfil y datos del Coach.</p>
+    <h2>8. Retencion de Datos</h2>
+    <p>Conservamos tus datos mientras tu cuenta este activa. Al eliminar tu cuenta, todos tus datos se borran permanentemente de nuestros servidores, incluyendo entrenamientos, nutricion, perfil, datos del Coach y los datos de salud asociados a tus sesiones.</p>
 
-    <h2>8. Menores de Edad</h2>
+    <h2>9. Menores de Edad</h2>
     <p>Hypertrophy AI no esta dirigido a menores de 13 anos. No recopilamos intencionalmente informacion de menores. Si descubrimos que un menor ha creado una cuenta, la eliminaremos.</p>
 
-    <h2>9. Cambios a esta Politica</h2>
+    <h2>10. Cambios a esta Politica</h2>
     <p>Podemos actualizar esta politica ocasionalmente. Te notificaremos de cambios significativos a traves de la aplicacion.</p>
 
-    <h2>10. Contacto</h2>
+    <h2>11. Contacto</h2>
     <p>Si tienes preguntas sobre esta politica de privacidad o sobre tus datos, contactanos en:</p>
     <p><a href="mailto:hypertrophyai.support@gmail.com">hypertrophyai.support@gmail.com</a></p>
   </div>
